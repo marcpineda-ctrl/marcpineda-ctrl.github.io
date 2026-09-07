@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Demo - Counter</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    h1 { color: #333; }
+
+    #count {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #0070f3;
+    }
+
+    button {
+      padding: 0.75rem 2rem;
+      margin: 0.5rem;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #increase { background: #0070f3; color: white; }
+    #decrease { background: #e53e3e; color: white; }
+
+    #increase:hover { background: #005bb5; }
+    #decrease:hover { background: #c53030; }
+
+    a { margin-top: 2rem; color: #0070f3; }
+  </style>
+</head>
+<body>
+  <h1>My Counter App</h1>
+  <p>Count: <span id="count">0</span></p>
+  <button id="decrease">Minus</button>
+  <button id="increase">Plus</button>
+  <a href="../index.html">← Back to Portfolio</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
