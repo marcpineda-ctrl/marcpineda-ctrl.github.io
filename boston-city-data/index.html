@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boston City Data</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+
+    h1 { color: #333; }
+    p { color: #666; margin-bottom: 1.5rem; }
+
+    .earner {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .earner h2 {
+      margin: 0 0 0.25rem;
+      color: #333;
+      font-size: 1.2rem;
+    }
+
+    .earner h3 {
+      margin: 0 0 0.25rem;
+      color: #666;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    .earner h4 {
+      margin: 0;
+      color: #0070f3;
+      font-size: 1.1rem;
+    }
+
+    #loading {
+      color: #666;
+      font-style: italic;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #0070f3;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <h1>Top 5 Boston City Earners</h1>
+  <p>Live data pulled from the Boston Employee Salaries dataset.</p>
+
+  <p id="loading">Loading data...</p>
+  <ul id="earners" style="list-style:none; padding:0;"></ul>
+
+  <a href="../index.html">← Back to Portfolio</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
